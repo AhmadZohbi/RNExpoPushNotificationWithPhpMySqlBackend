@@ -15,7 +15,7 @@ export default async () => {
         }
 
         let token = await Notifications.getExpoPushTokenAsync();
-        await axios.get('http://192.168.1.70/firebasepushnotification/register.php?token='+token)
+        await axios.get('http://192.168.1.70/expo_push_notification_backend/register_for_push_notification.php?token='+token)
             .then(function (response) {
                 console.log(response);
             })
