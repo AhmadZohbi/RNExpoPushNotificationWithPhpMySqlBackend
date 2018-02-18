@@ -12,7 +12,7 @@ CREATE TABLE `users` (
 
 3)Open the 'messaging' expo project in your favorite text editor and open it in cmd or terminal and run npm install to install all node_modules
 
-4) the push notification services is located in /services/push_notification.js
+4) the push notification services is located in ```/services/push_notification.js```
 Open it and change the location specific to your web server url and call the file
 ```javascript
 let token = await Notifications.getExpoPushTokenAsync();
@@ -27,7 +27,7 @@ console.log(error);
 
 5)Run the application on your ios or android device
 
-6) to test the push notification just call the file ```expo_push_notification.php``` and a notification will be sent to all registered devices
+6) to test the push notification just call the file ```expo_push_notification.php``` from your web server and a notification will be sent to all registered devices
 
 the app works too when you deploy it using exp build:ios for ios or exp build:android for android
 
